@@ -1,0 +1,29 @@
+@mixin ball-shape {
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+
+
+@mixin animation($delay) {
+    animation: move $delay  infinite;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(100vw - 60px));
+    }
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+@mixin colors($bg-color) {
+    background-color: $bg-color;
+}
+

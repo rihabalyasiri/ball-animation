@@ -1,0 +1,57 @@
+@-webkit-keyframes move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(calc(100vw - 60px));
+            transform: translateX(calc(100vw - 60px));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(calc(100vw - 60px));
+            transform: translateX(calc(100vw - 60px));
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.ball1 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red;
+  -webkit-animation: move 2s infinite;
+          animation: move 2s infinite;
+}
+
+.ball2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: blue;
+  -webkit-animation: move 4s infinite;
+          animation: move 4s infinite;
+}
+
+.ball3 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: yellow;
+  -webkit-animation: move 6s infinite;
+          animation: move 6s infinite;
+}
+/*# sourceMappingURL=main.css.map */

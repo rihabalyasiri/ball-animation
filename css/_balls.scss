@@ -1,0 +1,22 @@
+
+
+.ball1 {
+    @include ball-shape;
+    @include colors($color-ball1);
+    @include animation(2s);
+    
+
+}
+
+.ball2 {
+    @include ball-shape;
+    @include colors($color-ball2);
+    @include animation(4s);
+}
+
+.ball3 {
+    @include ball-shape;
+    @include colors($color-ball3);
+    @include animation(6s);
+}
+
